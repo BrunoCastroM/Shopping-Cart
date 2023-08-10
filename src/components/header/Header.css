@@ -1,0 +1,17 @@
+.header {
+    background-color: #232f3e;
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
