@@ -19,7 +19,5 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {
-    'react/button-has-type': 'off',
-  },
+  rules: {},
 };

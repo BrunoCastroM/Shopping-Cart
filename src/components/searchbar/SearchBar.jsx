@@ -15,7 +15,7 @@ export default function SearchBar() {
         onChange={(e) => setSearchValue(e.target.value)}
         required
       />
-      <button className="search_button">
+      <button className="search_button" type='button'>
         <BsSearch />
       </button>
     </form>
