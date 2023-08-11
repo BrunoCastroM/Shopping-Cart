@@ -3,11 +3,7 @@
   position: fixed;
   width: 100%;
   z-index: 1;
-}
-
-.container {
-  max-width: 110rem;
-  margin: 0 auto;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 .header > div {
@@ -15,4 +11,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #fff;
+  margin-right: 1.8rem;
 }

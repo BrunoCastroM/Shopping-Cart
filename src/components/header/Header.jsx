@@ -6,6 +6,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container">
+        <h1 className="logo">Logo</h1>
         <SearchBar />
         <CartButton />
       </div>

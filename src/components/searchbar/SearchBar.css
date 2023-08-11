@@ -17,6 +17,14 @@
   font-weight: 500;
   border-right: 0.1rem solid #ddd;
 }
+.search_input::placeholder {
+  font-weight: 500;
+  color: #BDC3C7;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
 
 .search_button {
   background: none;
