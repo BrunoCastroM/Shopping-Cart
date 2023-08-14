@@ -1,10 +1,16 @@
 import propTypes from 'prop-types';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import './ProductCard.css';
+import { useContext } from 'react';
 import formatCurrency from '../../utils/formatCurrency';
+import AppContext from '../../context/AppContext';
 
 export default function ProductCard({ data }) {
   const { title, thumbnail, price } = data;
+
+  const { cartItems, setCartItems } = useContext(AppContext);
+
+  const handleAddCart = () => setCartItems([...cartItems, data]);
 
   return (
     <section className="product_card">
@@ -19,7 +25,7 @@ export default function ProductCard({ data }) {
         <h2 className="card_title">{title}</h2>
       </div>
 
-      <button type="button" className="button_add_cart">
+      <button type="button" className="button_add_cart" onClick={handleAddCart}>
         <BsFillCartCheckFill />
       </button>
     </section>
