@@ -1,5 +1,6 @@
 import CartButton from '../cartbutton/CartButton';
 import SearchBar from '../searchbar/SearchBar';
+import FavoriteButton from '../favoritebutton/FavoriteButton';
 import './Header.css';
 
 export default function Header() {
@@ -8,7 +9,10 @@ export default function Header() {
       <div className="container">
         <h1 className="logo">Logo</h1>
         <SearchBar />
-        <CartButton />
+        <div className="buttons">
+          <CartButton />
+          <FavoriteButton />
+        </div>
       </div>
     </header>
   );

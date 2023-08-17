@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import { BsCart4, BsHeart } from 'react-icons/bs';
+import { BsCart4, BsFillHeartFill } from 'react-icons/bs';
 import './ProductCard.css';
 import { useContext } from 'react';
 import formatCurrency from '../../utils/formatCurrency';
@@ -30,7 +30,7 @@ export default function ProductCard({ data }) {
       </button>
 
       <button type="button" className="button_add_favorite">
-        <BsHeart />
+        <BsFillHeartFill />
       </button>
     </section>
   );

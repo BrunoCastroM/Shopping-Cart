@@ -61,12 +61,10 @@
   font-size: 2.1rem;
 }
 
-
 .product_card:hover .button_add_cart{
   transition: 300ms ease-in-out;
   background-color: #fca311;
 }
-
 
 .button_add_favorite {
   position: absolute;
@@ -80,14 +78,14 @@
   align-items: center;
   justify-content: center;
   border: none;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #F48024;
   background-color: transparent;
   cursor: pointer;
 }
 
 .button_add_favorite:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .product_card:hover .button_add_favorite {
