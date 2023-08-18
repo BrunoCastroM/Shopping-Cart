@@ -1,0 +1,44 @@
+.favorite_item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: .1rem solid #ddd;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.favorite_item_image {
+  width: 7rem;
+}
+
+.favorite_item_content {
+  padding: 0 3.5rem 0 1rem
+}
+
+.favorite_item_title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+}
+
+.favorite_item_price {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.button_remove_item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #d83232;
+  font-size: 2.2rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button_remove_item:hover{
+  color: #b61616;
+  transition: 300ms ease;
+}

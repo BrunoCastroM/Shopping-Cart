@@ -8,9 +8,11 @@ import AppContext from '../../context/AppContext';
 export default function ProductCard({ data }) {
   const { title, thumbnail, price } = data;
 
-  const { cartItems, setCartItems } = useContext(AppContext);
+  const { cartItems, setCartItems, setFavoriteItems, favoriteItems } =
+    useContext(AppContext);
 
   const handleAddCart = () => setCartItems([...cartItems, data]);
+  const handleAddFavorite = () => setFavoriteItems([...favoriteItems, data]);
 
   return (
     <section className="product_card">
@@ -26,10 +28,17 @@ export default function ProductCard({ data }) {
       </div>
 
       <button type="button" className="button_add_cart" onClick={handleAddCart}>
-        <span className='cart_icon'><BsCart4 /> </span>Adicione ao carrinho
+        <span className="cart_icon">
+          <BsCart4 />
+        </span>
+        Adicione ao carrinho
       </button>
 
-      <button type="button" className="button_add_favorite">
+      <button
+        type="button"
+        className="button_add_favorite"
+        onClick={handleAddFavorite}
+      >
         <BsFillHeartFill />
       </button>
     </section>

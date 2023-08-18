@@ -4,17 +4,18 @@ import AppContext from '../../context/AppContext';
 import './FavoriteButton.css';
 
 export default function CartButton() {
-  const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext);
+  const { favoriteItems, isFavoriteVisible, setIsFavoriteVisible } =
+    useContext(AppContext);
 
   return (
     <button
       type="button"
       className="favorite_button"
-      onClick={() => setIsCartVisible(!isCartVisible)}
+      onClick={() => setIsFavoriteVisible(!isFavoriteVisible)}
     >
       <BsHeart />
-      {cartItems.length > 0 && (
-        <span className="favorite_status">{cartItems.length}</span>
+      {favoriteItems.length > 0 && (
+        <span className="favorite_status">{favoriteItems.length}</span>
       )}
     </button>
   );

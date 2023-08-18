@@ -3,6 +3,7 @@ import './App.css';
 import Products from './components/products/Products';
 import Provider from './context/Provider';
 import Cart from './components/cart/Cart';
+import Favorite from './components/favorite/Favorite';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Products />
       <Cart />
+      <Favorite />
     </Provider>
   );
 }
